@@ -1,8 +1,78 @@
+<!DOCTYPE html>
 <html lang="uk">
-<head>
-    <title>Initial</title>
-</head>
-<body>
-<h1>Hello World!</h1>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Головна</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="js/add.html.js"></script>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Навігаційна панель -->
+    <div class="header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-targer="#navbar-responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-responsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Про мене</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Цікавинки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новинки</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /Навігаційна панель  -->
+    <!-- Слайдер з зображеннями -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="slider" src="img/background0.jpg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Подорожі</h1> 
+                    <h3>Моя думка про подорожі коротка: подорожуючи, не заїжджай занадто далеко, бо побачиш таке, що потім і забути буде неможливо...</h3>
+                    <h5 style="color: rgb(220, 220, 220); font-weight: 900;">Даниїл Хармс</h5>
+                    <a type="button" class="btn btn-outline-light btn-lg slider-button" href="#">БІЛЬШЕ</a>
+                    <a type="button" class="btn btn-primary btn-lg slider-button" href="#">ПРО МЕНЕ</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="slider" src="img/background1.png">
+            </div>
+            <div class="carousel-item">
+                <img class="slider" src="img/background2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img class="slider" src="img/background3.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- /Слайдер із зображеннями -->
+
+        
+    </body>
 </html>
