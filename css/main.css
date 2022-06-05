@@ -5,7 +5,7 @@ html, body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     color: #222;
-    background-color: rgb(247, 243, 239);
+    background-color: rgba(240, 232, 228, 0.704);
 }
 
 .logo {
