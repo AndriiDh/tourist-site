@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     color: #222;
+    background-color: rgb(247, 243, 239);
 }
 
 .logo {
@@ -91,6 +92,33 @@ html, body {
 .fa-map-location-dot, .fa-route, .fa-umbrella-beach {
     font-size: 64px;
     margin: 1rem;
+}
+
+.video {
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+}
+
+.social-network a {
+    font-size: 48px;
+    padding: 3rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-youtube {
+   color: #bb0000; 
+}
+
+.fa-weebly {
+    color:rgb(228, 228, 96);
+}
+
+.footer {
+    background-color: rgb(245, 245, 245);
+    padding: 15px 0 20px 0;
 }
 
 @media (min-width: 993px) {
