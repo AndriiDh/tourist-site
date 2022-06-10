@@ -6,10 +6,17 @@
     <title>Новинки</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/all.js"></script>
-    <link href="css/main.css" rel="stylesheet">
+    <script>
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+    </script>
+    <link href="css/newest.css" rel="stylesheet">
 </head>
 <body>
     <!-- Навігаційна панель -->
@@ -22,7 +29,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="./index.html">Головна</a>
                         </li>
                         <li class="nav-item">
@@ -31,7 +38,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./interest.html">Цікавинки</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="./newest.html">Новинки</a>
                         </li>
                     </ul>
@@ -40,140 +47,94 @@
         </nav>
     </div>
     <!-- /Навігаційна панель  -->
-    <!-- Інформаційна секція -->
-    <div class="container-fluid padding capt">
-        <div class="row head-text text-center">
-            <div class="col-12">
-                <h1 class="display-4">Подорожуй частіше</h1>
-            </div>
-            <hr>
-            <div class="col-12">
-                <p class="lead">
-                    Подорожі допомагають нам відпочити від побуту, забути про роботу, струсити з себе стрес і проблеми,
-                    а також переоцінити своє життя. Відвідуючи інші країни або міста, відпочиваючи на курортах,
-                    плескаючись в теплому морі, ми по-новому оцінюємо світ, а також краще пізнаємо себе.
-                </p>
-            </div>
-        </div>
+    <!-- SVG -->
+    <div class="justify-content-center d-flex">
+        <object type="image/svg+xml" data="img/image.svg" width="500" height="500" >
+            Your browser does not support SVG
+         </object> 
     </div>
-    <!-- /Інформаційна секція -->
-    <!-- Слайдер з зображеннями -->
-    <div id="slides" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#slides" data-slide-to="0" class="active"></li>
-            <li data-target="#slides" data-slide-to="1"></li>
-            <li data-target="#slides" data-slide-to="2"></li>
-            <li data-target="#slides" data-slide-to="3"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="slider" src="picture/background0.webp">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Подорожі</h1>
-                    <h3>Моя думка про подорожі коротка: подорожуючи, не заїжджай занадто далеко, бо побачиш таке, що
-                        потім і забути буде неможливо...</h3>
-                    <h5 style="color: rgb(220, 220, 220); font-weight: 900;">Даниїл Хармс</h5>
-                    <a type="button" class="btn btn-outline-light btn-lg btn-xs slider-button" href="#">БІЛЬШЕ</a>
-                    <a type="button" class="btn btn-primary btn-lg btn-xs slider-button" href="#">ПРО МЕНЕ</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="slider" src="picture/background1.webp">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Подорожі</h1>
-                    <h3>Тільки про дві речі ми будемо шкодувати на смертному одрі - що мало любили і мало подорожували</h3>
-                    <h5 style="color: rgb(220, 220, 220); font-weight: 900;">Марк Твен</h5>
-                    <a type="button" class="btn btn-outline-light btn-lg btn-xs slider-button" href="#">БІЛЬШЕ</a>
-                    <a type="button" class="btn btn-primary btn-lg btn-xs slider-button" href="#">ПРО МЕНЕ</a>
-                </div>
-            </div>
-            <div class=" carousel-item">
-                <img class="slider" src="picture/background2.webp">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Подорожі</h1>
-                    <h3>Життя під час подорожі - це мрія в чистому вигляді</h3>
-                    <h5 style="color: rgb(220, 220, 220); font-weight: 900;">Агата Крісті</h5>
-                    <a type="button" class="btn btn-outline-light btn-lg btn-xs slider-button" href="#">БІЛЬШЕ</a>
-                    <a type="button" class="btn btn-primary btn-lg btn-xs slider-button" href="#">ПРО МЕНЕ</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="slider" src="picture/background3.webp">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Подорожі</h1>
-                    <h3>Подорожі навчають більше, ніж будь-що інше. Іноді один день, проведений в інших місцях, дає більше, ніж десять років життя вдома</h3>
-                    <h5 style="color: rgb(220, 220, 220); font-weight: 900;">Анатоль Франс</h5>
-                    <a type="button" class="btn btn-outline-light btn-lg btn-xs slider-button" href="#">БІЛЬШЕ</a>
-                    <a type="button" class="btn btn-primary btn-lg btn-xs slider-button" href="#">ПРО МЕНЕ</a>
-                </div>
-            </div>
+    <!-- /SVG -->
+    <!-- JQuery акордіон -->
+    <div id="accordion" class="padding accordion-alighn">
+        <h3>Авантюризм</h3>
+        <div>
+          <p>
+            У дитинстві я та багато моїх однолітків фанатіли від книжок і 
+            фільмів про мореплавців, шукачів істини й альпіністів. 
+            Когось манив Давній Єгипет, хтось хотів стати палеонтологом і вивчати динозаврів, 
+            а дехто зачитувався Жуль Верном. Звісно, коли ми підросли, то дитячі мрії немов вода змила, 
+            і ми перетворилися на журналістів та програмістів. Доволі класична історія.
+          </p>
+          <p>
+            Утім, для себе я віднайшла секрет, де ж шукати пригодницький драйв. 
+            І роблю я це в мандрівках Україною. Поламка машини на дорозі, 
+            де хвилі розбитого асфальту утворюють дев’ятий вал, 
+            квест із пошуку їдла в провінційних містечках чи спуск з гори Хом’як у грозу переносять мене в мініверсію гри за виживання. 
+            Втеча від скажених диких собак або не менш войовничих індиків, що пасуться біля покинутих палаців, 
+            нагадують передачі про підкорювачів тварин. Так, я не мисливець на крокодилів, але, зрештою, індики теж непогано.
+          </p>
         </div>
-    </div>
-    <!-- /Слайдер із зображеннями -->
-    <!-- Секція з використанням іконкових шрифтів -->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-map-location-dot"></i>
-                <h3>Вибери місце</h3>
-                <p class="text-center">У тебе є точно у закладках місце, де ти обов'язково маєш побувати. Можливо саме
-                    час? Дізнайся якомога більше інформації, щоб отримати максимальне задоволення від проведеного часу.
-                </p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-route"></i>
-                <h3>Подолай шлях</h3>
-                <p class="text-center">Оціни всі переваги чи недоліки щодо різних типів транспорту, яким можна досягти
-                    місця призначення. Не забудь врахувати свій бюджет та вимоги</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fa-solid fa-umbrella-beach"></i>
-                <h3>Насолоджуйся</h3>
-                <p class="text-center">Бажаю тобі гарно відпочити, насолодитись країною, культурою, отримати лише
-                    позитивні емоції від твого відпочинку</p>
-            </div>
+        <h3>Вивчення історії</h3>
+        <div>
+          <p>
+            Знайомитися з історією можна в подорожах! 
+            Цей спосіб прийнятний майже всім і має безліч варіацій. 
+            Вивчати історію ґрунтовно і планомірно, відвідуючи всі області України кожного літа, 
+            чи дозовано, по шматочках, навідуючи сусідні регіони під час карантину. Відшукувати пам’ятки козацької доби 
+            або гуляти по дендропарках, створених українською аристократією в ХVІІІ — ХІХ століттях. 
+            Справді, історію легко віднайти в будь-якому місті та селищі та вивчати її по українських замках, 
+            палацах, пам’ятниках і навіть млинах.
+          </p>
         </div>
-        <hr class="my-4">
-    </div>
-    <!-- /Секція з використанням іконкових шрифтів -->
-    <!-- Секція з двома стовпцями (текст + відео)-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-12 col-lg-6">
-                <h2>Ви думаєте в Україні немає що подивитись?</h2>
-                <p>Україна - найбільша країна Європи, яка має дуже багато цікавих місцин, культурно розвивається сторіччами, в різних частинах збереглось щось унікальне...</p>
-                <br/><br/>
-                <p>Пропоную вам подивитись даний відео ролик про нашу Батьківщину, яка зараз у вогні через ворогів, яких ми обов'язково знищимо... Тому саме час планувати вашу подорож, адже перемога незабаром, і кожен Українець в це вірить!</p>
-                <a type="button" class="btn btn-primary btn-lg  btn-xs slider-button" href="#">НОВИНКИ</a>
-            </div>
-            <div class="col-lg-6">
-                <iframe class="video" width="612" height="344" src="https://www.youtube.com/embed/D7SlK16o82o"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+        <h3>Ефект неочікуваності</h3>
+        <div>
+          <p>
+            Дефіцит інформації та непопулярність такого виду дозвілля, як мандри Україною, 
+            породжують дивовижну особливість вітчизняного туризму — ефект раптовості. 
+            В цілому, коли плануєш поїздку до Барселони, ти знаєш, чого від неї чекати. 
+            Гаудівська архітектура, паелья, музей Пікассо, набережна Моль де ла Фуста. Можна вивчити всі маршрути і фотографії, 
+            переглянути мапи і онлайн-екскурсії, перечитати коментарі й відгуки. Все це готує тебе до мандрівки. 
+            Ось те, що тобі пропонує столиця Каталонії. Дивись. Погоджуйся. Або змінюй напрямок маршруту і купуй ловкост до Азії, скажімо.
+          </p>
+          <ul>
+            <li>Україна</li>
+            <li>понад</li>
+            <li>усе</li>
+          </ul>
         </div>
-    </div>
-    <!-- /Секція з двома стовпцями -->
-    <!-- Посилання на соц мережі  -->
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2>Соціальні мережі</h2>
-            </div>
-            <div class="col-12 social-network">
-                <a href="https://www.facebook.com/departmentCAD/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UC5k442CPOLDKtxbqZWJrY1g"><i class="fab fa-youtube"></i></a>
-                <a href="http://cad.lp.edu.ua/"><i class="fab fa-weebly"></i></a>
-            </div>
+        <h3>Бувай, меншовартосте!</h3>
+        <div>
+          <p>
+            Врешті-решт, що як не мандрівки Україною, 
+            здатне вилікувати від нав’язаного нам комплексу меншовартості? 
+            Жодна книжка не розкаже, наскільки різнобарвна, суперечлива і водночас прекрасна наша країна.
+          </p>
+          <p>
+            Об’їздивши Україну вздовж і впоперек, я все боюся одного разу виявити, що вже все бачила і більше нічим себе не здивую. 
+            Але, на щастя, секретів наша тисячолітня історія має багацько й список місць, де я маю побувати, поповнюється з кожним роком.
+          </p>
         </div>
+      </div>
+    <!-- /акордіон -->
+    <!-- віджет погоди -->
+    <div class="padding">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Нью Йорк" data-label_2="Погода" data-theme="original" >Погода</a>
     </div>
+    <!-- /віджет погоди -->
+    <div id='external_iframe' class="padding accordion-alighn"></div> 
     <!-- Футер сторінки -->
-    <div class="container-fluid padding footer">
-        <div class="text-center">
-            <h4>© 2022 Copyright: <a href="/about.html">Андрій Дудаш</a></h4>
+    <footer>
+        <div class="container-fluid padding footer">
+            <div class="text-center">
+                <h4>© 2022 Copyright: <a href="/about.html">Андрій Дудаш</a></h4>
+            </div>
         </div>
-    </div>
+    </footer>
     <!-- /Футер сторінки -->
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <script type="text/javascript" src="https://www.smi.today/vidjetukrainenew.js"></script>
 </body>
+
 </html>
